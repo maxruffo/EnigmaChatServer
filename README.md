@@ -20,3 +20,6 @@ git push -u origin main
 git remote add origin git@github.com:maxruffo/test.git
 git branch -M main
 git push -u origin main
+
+git remote origin already exists
+git remote remove origin
