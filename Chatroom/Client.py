@@ -1,6 +1,10 @@
-
+import rsa
 import socket, threading
 from colorama import Fore, Back, Style
+from config import host,port, privateKey, publicKey
+
+
+
 nickname = input("Choose your nickname: ")
 print("\n"+"Choose your Color:"+"\n")
 print(" - Red")
@@ -25,11 +29,12 @@ else:
 print("\n")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)      #socket initialization
-client.connect(('127.0.0.1', 7979))                             #connecting client to server
+client.connect((host, port))                             #connecting client to server
 
 def receive():
     while True:                                                 #making valid connection
         try:
+            
             message = client.recv(1024).decode('UTF-8')
             if message == 'NICKNAME':
                 client.send(nickname.encode('UTF-8'))
@@ -40,8 +45,9 @@ def receive():
             client.close()
             break
 def write():
-    while True:                                              #message layout
-        message = '\033{}{}: \033[48;5;236m\033[38;5;231m{}\033[0;0m'.format(color,nickname, input(''))
+    while True:              
+        encMessage = rsa.encrypt(input('').encode(),publicKey)                                #message layout
+        message = '\033{}{}: \033[48;5;236m\033[38;5;231m{}\033[0;0m'.format(color,nickname, encMessage)
         client.send(message.encode('UTF-8'))
 
 receive_thread = threading.Thread(target=receive)               #receiving multiple messages

@@ -1,7 +1,6 @@
-import socket, threading                                                #Libraries import
+import socket, threading  
+from config import host,port                                              #Libraries import
 
-host = '127.0.0.1'                                                      #LocalHost
-port = 7979                                                             #Choosing unreserved port
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)              #socket initialization
 server.bind((host, port))                                               #binding host and port to socket
