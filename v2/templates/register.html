@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registrieren</title>
+  </head>
+  <body>
+    <h1>Registrieren</h1>
+    <form method="POST">
+      <label for="username">Benutzername:</label><br>
+      <input type="text" id="username" name="username" required><br>
+      <label for="password">Passwort:</label><br>
+      <input type="password" id="password" name="password" required><br>
+      <br>
+      <input type="submit" value="Registrieren">
+    </form>
+    <br>
+    <a href="{{ url_for('login') }}">Zurück zum Login</a>
+  </body>
+</html>
