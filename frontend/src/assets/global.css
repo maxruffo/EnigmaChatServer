@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('/public/fonts/Muli-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #001d37;
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+p, span, a {
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+nav {
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
