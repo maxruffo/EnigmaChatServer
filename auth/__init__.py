@@ -1,6 +1,6 @@
 from flask import Flask
-from routes import auth_bp
-from models import db
+from auth.routes import auth_bp
+from auth.models import db
 
 def create_app():
     app = Flask(__name__)
