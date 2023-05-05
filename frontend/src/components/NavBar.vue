@@ -32,6 +32,12 @@ export default {
 
 <style scoped>
 
+li {
+    color:white;
+}
 
+nav {
+    color: white;
+}
 
 </style>

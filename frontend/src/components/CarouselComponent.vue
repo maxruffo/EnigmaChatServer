@@ -10,15 +10,15 @@
             <div class="carousel-item active" >
                 <img src="../assets/placeholderimage.png" class="d-block w-100" alt="..." width="250" height="500">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Recognise your Bad-Habits</h5>
-                    <p1>The firs step should always be to recognise your Bad Habits first</p1>
+                    <h5>Chat anonymously with your Friends</h5>
+                    <p1>All messages are encrypted via SHA256 and your Enigma settings</p1>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../assets/placeholderimage.png" class="d-block w-100" alt="..." width="250" height="500">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Habitrackus will Help</h5>
-                    <p1>Habitrackus is an Application that will Help you tracking your daily habits</p1>
+                    <h5>Minimalistic Design</h5>
+                    <p1>We want to give you a nice Expirience with our Service</p1>
                 </div>
             </div>
             <div class="carousel-item">
