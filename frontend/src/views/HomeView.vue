@@ -8,6 +8,7 @@
                 </div>
                 <div className="col-8">
                     <CarouselComponent></CarouselComponent>
+                    <LandingPage></LandingPage>
                 </div>
                 <div className="col">
                 </div>
@@ -31,10 +32,12 @@ nav {
 <script>
 // @ is an alias to /src
 import CarouselComponent from "@/components/CarouselComponent.vue";
+import LandingPage from "@/components/LandingPage.vue";
 
 export default {
     name: 'HomeView',
     components: {
+        LandingPage,
         CarouselComponent
     }
 }
