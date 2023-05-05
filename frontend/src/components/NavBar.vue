@@ -32,12 +32,17 @@ export default {
 
 <style scoped>
 
-li {
-    color:white;
+nav a {
+    color: white;
 }
 
-nav {
+ul li a {
     color: white;
+}
+
+nav a:hover,
+nav a:active {
+    color: #555555;
 }
 
 </style>
