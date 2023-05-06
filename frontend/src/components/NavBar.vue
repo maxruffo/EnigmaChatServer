@@ -15,7 +15,7 @@
                         <a class="nav-link" href="/login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                 </ul>
             </div>
@@ -40,9 +40,19 @@ ul li a {
     color: white;
 }
 
-nav a:hover,
-nav a:active {
+nav a:hover {
     color: #555555;
 }
 
+nav a.active,
+nav a:active {
+color: #555555;
+}
+
+.navbar-brand {
+color: #FF5722;
+}
+
 </style>
+
+
